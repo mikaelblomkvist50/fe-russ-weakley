@@ -1,0 +1,21 @@
+body {
+	margin: 0;
+	padding: 20px;
+	font-size: 100%;
+}
+
+h1 { margin: 0 0 .5em; } /* top side bottom */
+h2 { margin: 0; }
+.test { background: yellow; }
+
+/* add rules here */
+.test01  { width: 200px; } /* Because it's an inline element width does not get applied */
+.test02 { height: 60px; } /* Because it's an inline element height does not get applied */
+.test03 { margin: 2em; } /* For the inline elements margins only effect content on thet left and right */
+.test04 { padding: 2em; } 
+/* Padding on inline elements is like wtf. So it gets applied to the left and right.
+   Even though padding is being applied to all sides, it's only having effect on the content
+   to the left and right element. It seems to ruin the content above it and also below but
+   you can still see the content below. It's difficult to tell why all this shit happens */
+.test05 { border: 1em solid red; }
+/* Same f*ing deal as applying padding to an inline block. */
