@@ -22,9 +22,26 @@ h2
 }
 
 /* add the property */
+h2 { position: fixed; }
+/* As soon as we set this to postion fixed the content below shifted up
+   because the h2 element has moved off the page. The other thing that has
+   happend is that this element has shrink wraped. It was a block level element
+   and now it's shriked wraped in around the content (it still is display: block;)
+   though.
+   The key question is what is this element being positioned against??? */
 
 /* understanding values */
+h2 { left: 20px; }
+/* It's positioned it self 20px away from the left edge of the view port.
+   If you scrool up then down you can see how interesting this element is.
+   It remains fixed in place relative to the viewport. */
+h2 { top: 40px; }
 
 /* stretched */
+h2 {
+  left: 0;
+  right: 0;
+}
 
 /* sized */
+h2 { width: 300px; }
