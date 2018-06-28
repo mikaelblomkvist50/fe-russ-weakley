@@ -22,7 +22,23 @@ h2,strong
 }
 
 /* add the property */
+h2, strong {
+  position: relative;
+}
+
 
 /* understanding values */
+h2, strong { left: 20px; }
+/* Relative to their original position
+   They are not being positioned relative to thier parent
+   or the viewport. Like absoloutely positioned elements. */
 
 /* sized */
+h2, strong {width: 300px; }
+/* You can see something interesting the strong element which is an 
+   inline element hasn't changed. While the h2 element which is a 
+   block element has changed.
+   So what does this mean???
+   Remember from previous lessons the h2 element is a block element
+   and can be given a width. The strong element is an inline element
+   and therefore can not be given a width. */
