@@ -1,4 +1,4 @@
-![](BYFW Lesson 6.1.jpg)
+![](BYFW-Lesson-6.1.jpg)
 
 https://www.sitepoint.com/premium/courses/getting-started-with-css-2903/lesson/6/step/1
 
